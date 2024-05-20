@@ -41,5 +41,6 @@ class ImotionViewController: UIViewController {
     @IBAction func buttonsPressed(_ sender: UIButton) {
         counts[sender.tag] += 1
         countLabels[sender.tag].text = "\(texts[sender.tag]) \(counts[sender.tag])"
+//        print(sender.tag)
     }
 }
