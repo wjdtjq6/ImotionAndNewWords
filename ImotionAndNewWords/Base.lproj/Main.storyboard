@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bwm-0x-H3S">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -22,79 +22,79 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="button1Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T08-Io-xXz"/>
+                                    <action selector="buttonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WWM-0C-Kmm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahh-uQ-7kF">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahh-uQ-7kF">
                                 <rect key="frame" x="154" y="305" width="85" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="button2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vCU-UH-hkm"/>
+                                    <action selector="buttonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OlU-ox-h62"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugq-im-HxI">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugq-im-HxI">
                                 <rect key="frame" x="292" y="306" width="85" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="button3Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fiV-sJ-x9P"/>
+                                    <action selector="buttonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNA-Wb-nOS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3c6-Nn-oy1">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3c6-Nn-oy1">
                                 <rect key="frame" x="16" y="462" width="85" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="button4Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="heW-qA-Ozh"/>
+                                    <action selector="buttonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HN2-QW-JI0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsv-4H-Fo7">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsv-4H-Fo7">
                                 <rect key="frame" x="154" y="460" width="85" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="button5Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gaC-jx-Ku0"/>
+                                    <action selector="buttonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5f1-jv-EFh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOe-FQ-PRd">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOe-FQ-PRd">
                                 <rect key="frame" x="292" y="461" width="85" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="button6Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QdA-mT-L0d"/>
+                                    <action selector="buttonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mct-2O-9du"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuy-Ac-slO">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuy-Ac-slO">
                                 <rect key="frame" x="16" y="638" width="85" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="button7Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4T3-uN-OLZ"/>
+                                    <action selector="buttonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nwx-1a-B8P"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHi-Kv-QzA">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHi-Kv-QzA">
                                 <rect key="frame" x="154" y="636" width="85" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="button8Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bi6-bw-f9g"/>
+                                    <action selector="buttonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4u-rC-Pmu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2n-x4-0ax">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2n-x4-0ax">
                                 <rect key="frame" x="292" y="637" width="85" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="button9Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9fE-o5-AR0"/>
+                                    <action selector="buttonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t5C-kB-goK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml9-YE-Q1B">
@@ -176,26 +176,26 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="button1" destination="77o-J1-RLJ" id="m9s-qG-Zeb"/>
-                        <outlet property="button2" destination="ahh-uQ-7kF" id="XCg-J5-z8K"/>
-                        <outlet property="button3" destination="Ugq-im-HxI" id="uAE-zw-Mde"/>
-                        <outlet property="button4" destination="3c6-Nn-oy1" id="ow1-Tk-PCV"/>
-                        <outlet property="button5" destination="Qsv-4H-Fo7" id="Y51-sH-ZAj"/>
-                        <outlet property="button6" destination="GOe-FQ-PRd" id="vb6-hn-tD0"/>
-                        <outlet property="button7" destination="vuy-Ac-slO" id="mcS-hV-8Ky"/>
-                        <outlet property="button8" destination="dHi-Kv-QzA" id="hu1-mE-6h2"/>
-                        <outlet property="button9" destination="t2n-x4-0ax" id="l3t-HI-KDh"/>
-                        <outlet property="countLabel1" destination="ml9-YE-Q1B" id="z2Z-oK-uhN"/>
-                        <outlet property="countLabel2" destination="H7O-Tz-2Ct" id="3nG-LB-lsH"/>
-                        <outlet property="countLabel3" destination="Rfx-NX-7bz" id="XCh-Us-mYz"/>
-                        <outlet property="countLabel4" destination="2fC-fO-ngg" id="p4D-UU-axE"/>
-                        <outlet property="countLabel5" destination="XEE-CD-EsL" id="VdF-lY-hnN"/>
-                        <outlet property="countLabel6" destination="v8v-ab-C0S" id="xlk-8D-1hG"/>
-                        <outlet property="countLabel7" destination="BAx-kL-9fq" id="HkY-Bf-8gA"/>
-                        <outlet property="countLabel8" destination="xqd-kN-TOd" id="QDk-Dr-Xc5"/>
-                        <outlet property="countLabel9" destination="Y1k-JO-0Ed" id="GtS-U6-xC4"/>
                         <outlet property="titleLabel" destination="nvW-R2-Ukg" id="1Jt-vm-bn5"/>
                         <outlet property="topImage" destination="ZI2-eO-QsN" id="LQ1-mc-PQN"/>
+                        <outletCollection property="buttons" destination="77o-J1-RLJ" collectionClass="NSMutableArray" id="x3H-ra-P4g"/>
+                        <outletCollection property="buttons" destination="ahh-uQ-7kF" collectionClass="NSMutableArray" id="vEd-G1-c5Q"/>
+                        <outletCollection property="buttons" destination="Ugq-im-HxI" collectionClass="NSMutableArray" id="T6M-B6-EpA"/>
+                        <outletCollection property="buttons" destination="3c6-Nn-oy1" collectionClass="NSMutableArray" id="ehU-dm-cGK"/>
+                        <outletCollection property="buttons" destination="Qsv-4H-Fo7" collectionClass="NSMutableArray" id="eT9-le-dTl"/>
+                        <outletCollection property="buttons" destination="GOe-FQ-PRd" collectionClass="NSMutableArray" id="mH3-TP-gY8"/>
+                        <outletCollection property="buttons" destination="vuy-Ac-slO" collectionClass="NSMutableArray" id="EIN-85-eEp"/>
+                        <outletCollection property="buttons" destination="dHi-Kv-QzA" collectionClass="NSMutableArray" id="AWs-AH-9cr"/>
+                        <outletCollection property="buttons" destination="t2n-x4-0ax" collectionClass="NSMutableArray" id="chN-R8-g5V"/>
+                        <outletCollection property="countLabels" destination="ml9-YE-Q1B" collectionClass="NSMutableArray" id="TrA-Fm-1qu"/>
+                        <outletCollection property="countLabels" destination="H7O-Tz-2Ct" collectionClass="NSMutableArray" id="j5p-6x-dpd"/>
+                        <outletCollection property="countLabels" destination="Rfx-NX-7bz" collectionClass="NSMutableArray" id="0Re-ow-zy5"/>
+                        <outletCollection property="countLabels" destination="2fC-fO-ngg" collectionClass="NSMutableArray" id="BjU-uF-mGg"/>
+                        <outletCollection property="countLabels" destination="XEE-CD-EsL" collectionClass="NSMutableArray" id="3Na-GP-R3e"/>
+                        <outletCollection property="countLabels" destination="v8v-ab-C0S" collectionClass="NSMutableArray" id="9VD-0Q-V47"/>
+                        <outletCollection property="countLabels" destination="BAx-kL-9fq" collectionClass="NSMutableArray" id="MBh-qf-EN0"/>
+                        <outletCollection property="countLabels" destination="xqd-kN-TOd" collectionClass="NSMutableArray" id="tQ0-qk-ma4"/>
+                        <outletCollection property="countLabels" destination="Y1k-JO-0Ed" collectionClass="NSMutableArray" id="EU1-Mk-Tt4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -216,34 +216,34 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="enterTextField:" destination="vgU-Wa-wJK" eventType="editingDidEndOnExit" id="bgm-pw-RYg"/>
+                                    <action selector="enterTextField:" destination="vgU-Wa-wJK" eventType="editingDidEndOnExit" id="6V1-sJ-MdB"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upr-7Q-OvV">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upr-7Q-OvV">
                                 <rect key="frame" x="101" y="101" width="75" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="button2Pressed:" destination="vgU-Wa-wJK" eventType="touchUpInside" id="bX6-9P-vzU"/>
+                                    <action selector="buttonsPressed:" destination="vgU-Wa-wJK" eventType="touchUpInside" id="WbZ-DQ-Mfh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJU-cy-O6A">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJU-cy-O6A">
                                 <rect key="frame" x="184" y="101" width="75" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="button3Pressed:" destination="vgU-Wa-wJK" eventType="touchUpInside" id="xgM-Hy-2EB"/>
+                                    <action selector="buttonsPressed:" destination="vgU-Wa-wJK" eventType="touchUpInside" id="20J-5A-YnM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjF-kG-5ke">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjF-kG-5ke">
                                 <rect key="frame" x="343" y="59" width="34" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="sear"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="vgU-Wa-wJK" eventType="touchUpInside" id="Y4m-V4-fNP"/>
+                                    <action selector="buttonsPressed:" destination="vgU-Wa-wJK" eventType="touchUpInside" id="2QV-6G-03K"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ffy-cU-HPR">
@@ -270,7 +270,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="button1Pressed:" destination="vgU-Wa-wJK" eventType="touchUpInside" id="DSQ-Xt-U5n"/>
+                                    <action selector="buttonsPressed:" destination="vgU-Wa-wJK" eventType="touchUpInside" id="tcq-DG-kgi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -278,13 +278,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="button1" destination="I8S-jf-cUZ" id="WQc-Dp-QKQ"/>
-                        <outlet property="button2" destination="Upr-7Q-OvV" id="ob1-gW-6E9"/>
-                        <outlet property="button3" destination="TJU-cy-O6A" id="xai-ef-3ub"/>
                         <outlet property="imageView" destination="QDp-cn-aPt" id="jXa-EB-w6W"/>
                         <outlet property="searchButton" destination="JjF-kG-5ke" id="PVy-da-wOD"/>
                         <outlet property="textField" destination="lpG-8a-2dF" id="azS-rM-SgD"/>
                         <outlet property="textLabel" destination="wsF-H0-Ly4" id="oID-9U-BVf"/>
+                        <outletCollection property="buttons" destination="I8S-jf-cUZ" collectionClass="NSMutableArray" id="1N8-jb-S0R"/>
+                        <outletCollection property="buttons" destination="Upr-7Q-OvV" collectionClass="NSMutableArray" id="nko-8j-8ll"/>
+                        <outletCollection property="buttons" destination="TJU-cy-O6A" collectionClass="NSMutableArray" id="aSB-ub-cSU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tdn-1y-LWO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -309,31 +309,31 @@
                                     <action selector="enterTextField:" destination="bwm-0x-H3S" eventType="editingDidEnd" id="eyC-eS-R2r"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JL1-rd-bjv">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JL1-rd-bjv">
                                 <rect key="frame" x="101" y="101" width="75" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="button2Pressed:" destination="bwm-0x-H3S" eventType="touchUpInside" id="qUW-Af-09n"/>
+                                    <action selector="buttonPressed:" destination="bwm-0x-H3S" eventType="touchUpInside" id="xqW-7J-ge4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niF-Qt-zne">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niF-Qt-zne">
                                 <rect key="frame" x="184" y="101" width="75" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="button3Pressed:" destination="bwm-0x-H3S" eventType="touchUpInside" id="TZB-b1-Z8q"/>
+                                    <action selector="buttonPressed:" destination="bwm-0x-H3S" eventType="touchUpInside" id="qoB-8t-niO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfY-J7-4vg">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfY-J7-4vg">
                                 <rect key="frame" x="343" y="59" width="34" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="sear"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="bwm-0x-H3S" eventType="touchUpInside" id="mMY-xi-U4v"/>
+                                    <action selector="buttonPressed:" destination="bwm-0x-H3S" eventType="touchUpInside" id="Uch-aT-dYo"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ub6-DE-Og0">
@@ -360,7 +360,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="button1Pressed:" destination="bwm-0x-H3S" eventType="touchUpInside" id="TIL-5p-tZw"/>
+                                    <action selector="buttonPressed:" destination="bwm-0x-H3S" eventType="touchUpInside" id="rot-7L-JQg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -368,13 +368,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="button1" destination="Bck-zp-psv" id="mJR-eG-nO1"/>
-                        <outlet property="button2" destination="JL1-rd-bjv" id="cp1-t4-8fN"/>
-                        <outlet property="button3" destination="niF-Qt-zne" id="FNH-P6-SMC"/>
                         <outlet property="imageView" destination="b5Y-JV-SFc" id="AbV-DI-04j"/>
                         <outlet property="searchButton" destination="pfY-J7-4vg" id="HLI-VQ-DvJ"/>
                         <outlet property="textField" destination="pkX-o8-lLx" id="R0D-8d-gcM"/>
                         <outlet property="textLabel" destination="s7u-eF-bVb" id="eg4-e4-PI2"/>
+                        <outletCollection property="buttons" destination="Bck-zp-psv" collectionClass="NSMutableArray" id="IjD-4m-EvE"/>
+                        <outletCollection property="buttons" destination="JL1-rd-bjv" collectionClass="NSMutableArray" id="S3X-AR-gvJ"/>
+                        <outletCollection property="buttons" destination="niF-Qt-zne" collectionClass="NSMutableArray" id="PU2-An-FEK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N75-iZ-A9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

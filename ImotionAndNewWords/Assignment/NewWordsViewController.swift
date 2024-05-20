@@ -11,14 +11,14 @@ class NewWordsViewController: UIViewController {
     @IBOutlet var searchButton: UIButton!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var textField: UITextField!
-    @IBOutlet var button1: UIButton!
-    @IBOutlet var button2: UIButton!
-    @IBOutlet var button3: UIButton!
+    
+    @IBOutlet var buttons: [UIButton]!
+    
     @IBOutlet var textLabel: UILabel!
     var list = ["잡채":"'그 자체'의 언어유희","중꺾마":"중요한건 꺾이지않는 마음","스불재":"스스로 불러들인 재앙","ㄱㅂㅈㄱ":"가보자고","댕댕이":"멍멍이"]
     var arrKey: [String] = []
     var arrValue: [String] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,73 +33,38 @@ class NewWordsViewController: UIViewController {
         searchButton.setImage(UIImage(systemName: "magnifyingglass")?.withTintColor(.white, renderingMode: .alwaysOriginal), for: .normal)
         searchButton.backgroundColor = .black
         
-        button1.layer.cornerRadius = 10
-        button2.layer.cornerRadius = 10
-        button3.layer.cornerRadius = 10
-        button1.layer.borderWidth = 2
-        button2.layer.borderWidth = 2
-        button3.layer.borderWidth = 2
-        button1.layer.borderColor = UIColor.black.cgColor
-        button2.layer.borderColor = UIColor.black.cgColor
-        button3.layer.borderColor = UIColor.black.cgColor
-        button1.tintColor = .black
-        button2.tintColor = .black
-        button3.tintColor = .black
-        
-        button1.setTitle(arrKey[0], for: .normal)
-        button2.setTitle(arrKey[1], for: .normal)
-        button3.setTitle(arrKey[2], for: .normal)
-        
+        for i in 0...buttons.count-1 {
+            buttons[i].layer.cornerRadius = 10
+            buttons[i].layer.borderWidth = 2
+            buttons[i].layer.borderColor = UIColor.black.cgColor
+            buttons[i].tintColor = .black
+            buttons[i].setTitle(arrKey[i], for: .normal)
+        }
         imageView.image = .wordLogo
         imageView.contentMode = .scaleToFill
         
         textLabel.textAlignment = .center
-       
-        
     }
     func keyAndValue() {
-        if textField.text == arrKey[0] {
-            textLabel.text = arrValue[0]
-        }
-        else if textField.text == arrKey[1] {
-            textLabel.text = arrValue[1]
-        }
-        else if textField.text == arrKey[2] {
-            textLabel.text = arrValue[2]
-        }
-        else if textField.text == arrKey[3] {
-            textLabel.text = arrValue[3]
-        }
-        else if textField.text == arrKey[4] {
-            textLabel.text = arrValue[4]
-        }
-        else {
-            textLabel.text = "검색결과가 없습니다."
+        textLabel.text = "검색결과가 없습니다."
+        for i in 0...4 {
+            if textField.text == arrKey[i] {
+                textLabel.text = arrValue[i]
+            }
         }
     }
     @IBAction func enterTextField(_ sender: UITextField) {
         imageView.image = .background
         keyAndValue()
     }
-
-    @IBAction func buttonPressed(_ sender: UIButton) {
+    @IBAction func buttonsPressed(_ sender: UIButton) {
         imageView.image = .background
-        keyAndValue()
-    }
-    
-    @IBAction func button1Pressed(_ sender: UIButton) {
-        imageView.image = .background
-        textLabel.text = arrValue[0]
-        textField.text = arrKey[0]
-    }
-    @IBAction func button2Pressed(_ sender: UIButton) {
-        imageView.image = .background
-        textLabel.text = arrValue[1]
-        textField.text = arrKey[1]
-    }
-    @IBAction func button3Pressed(_ sender: UIButton) {
-        imageView.image = .background
-        textLabel.text = arrValue[2]
-        textField.text = arrKey[2]
+        if sender.tag == 10 {
+            keyAndValue()
+        }
+        else {
+            textLabel.text = arrValue[sender.tag]
+            textField.text = arrKey[sender.tag]
+        }
     }
 }
