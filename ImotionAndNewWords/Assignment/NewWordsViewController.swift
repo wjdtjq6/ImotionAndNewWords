@@ -44,14 +44,31 @@ class NewWordsViewController: UIViewController {
         imageView.contentMode = .scaleToFill
         
         textLabel.textAlignment = .center
+        
+        //최근검색어 기능
+        if UserDefaults.standard.string(forKey: "최근검색어") != nil {
+            UserDefaults.standard.string(forKey: "최근검색어")
+            textField.text = "최근검색어: "+UserDefaults.standard.string(forKey: "최근검색어")!
+            
+            imageView.image = .background
+            textLabel.text = list[UserDefaults.standard.string(forKey: "최근검색어")!]
+        }
     }
     func keyAndValue() {
         textLabel.text = "검색결과가 없습니다."
-        for i in 0...4 {
-            if textField.text == arrKey[i] {
-                textLabel.text = arrValue[i]
+        if textField.text != "" {
+            for i in 0...4 {
+                if textField.text == arrKey[i] {
+                    textLabel.text = arrValue[i]
+                    UserDefaults.standard.set(textField.text, forKey: "최근검색어")
+                }
             }
         }
+        else {
+            textLabel.text = "검색어를 입력해주세요."
+        }
+        
+        
     }
     @IBAction func enterTextField(_ sender: UITextField) {
         imageView.image = .background
@@ -65,6 +82,7 @@ class NewWordsViewController: UIViewController {
         else {
             textLabel.text = arrValue[sender.tag]
             textField.text = arrKey[sender.tag]
+            UserDefaults.standard.set(textField.text, forKey: "최근검색어")
         }
     }
 }
